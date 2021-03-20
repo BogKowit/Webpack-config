@@ -1,10 +1,10 @@
-@use "variables";
+@use "./variables";
 
 body {
     margin: 0;
     background-color: variables.$bg;
     color: var(--text);
-    font-size: 50px;
+    font-size: 20px;
 }
 main {
     display: flex;

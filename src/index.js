@@ -1,12 +1,4 @@
-import "./styles/index.scss";
+import { render } from "react-dom";
+import App from "./components/App.jsx";
 
-const airRecipe ={
-    a: 2,
-    b: 1,
-};
-const fireRecipe={
-    c:4,
-    d:3,
-};
-console.log(airRecipe);
-console.log(fireRecipe);
+render(<App />, document.getElementById("root"));
