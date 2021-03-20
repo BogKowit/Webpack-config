@@ -1,3 +1,5 @@
+import "./styles/index.scss";
+
 const airRecipe ={
     a: 2,
     b: 1,
