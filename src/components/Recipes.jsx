@@ -6,7 +6,7 @@ const airRecipe ={
 };
 const fireRecipe={
     c:4,
-    d:3,
+    d:4,
 };
 console.log(airRecipe);
 console.log(fireRecipe);
@@ -16,7 +16,7 @@ const Recipes = () => {
     return (
         <div>
             <h3>Current Recipe:</h3>
-            <button onClick={() => setRecipe(fireRecipe)}>Fire recipe</button>
+            <button onClick={() => setRecipe(fireRecipe)}>Fire recipe...</button>
             <button onClick={() => setRecipe(airRecipe)}>Air recipe</button>
         
         <ul>
