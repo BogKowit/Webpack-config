@@ -3,12 +3,10 @@ const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin"
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const { plugin } = require("postcss");
 
 let mode = "development";
 let target = "web";
 const plugins =  [
-    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
         template: "./src/index.html",
@@ -16,12 +14,14 @@ const plugins =  [
 ];
 
 if (process.env.NODE_ENV === "production"){
+    plugins.push(new CleanWebpackPlugin());
     mode = "production";
     target = "browserslist";
-}else{
-    plugins.push(
-        new ReactRefreshWebpackPlugin());
-    }
+}
+
+if (process.env.SERVE){
+    plugins.push(new ReactRefreshWebpackPlugin());
+}
 
 module.exports = {
     mode: mode,
