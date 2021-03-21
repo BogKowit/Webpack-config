@@ -9,7 +9,7 @@ const App = () => {
             <section className="hero"></section>
         <main>
             <section>
-                <h1>Hoi, react</h1>
+                <h1>Hoii, react</h1>
             </section>
             <Recipes />
         </main>
