@@ -1,3 +1,5 @@
 # Webpack-config
 # Webpack-config
-DUPA
+
+konfiguaracja react+js z ts.
+instalacja tailwindcss.

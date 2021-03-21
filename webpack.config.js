@@ -59,13 +59,20 @@ module.exports = {
                     loader: "babel-loader",
                 },
             },
+            {
+                test: /\.tsx?$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'ts-loader',
+                }
+            },
         ],
     },
 
     plugins: plugins,
 
     resolve:{
-        extensions: [".js","jsx"],
+        extensions: [".ts",".js",".jsx"],
     },
 
     devtool: "source-map",
