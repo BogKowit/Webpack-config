@@ -1,3 +1,4 @@
+import React from "react";
 import PropTypes from "prop-types";
 
 const UserListCreateStatus = ({ userData: { status, name, age, surname, info = ""} }) => (

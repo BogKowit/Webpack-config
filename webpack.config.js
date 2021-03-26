@@ -59,13 +59,6 @@ module.exports = {
                     loader: "babel-loader",
                 },
             },
-            {
-                test: /\.tsx?$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'ts-loader',
-                }
-            },
         ],
     },
 
