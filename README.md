@@ -12,7 +12,7 @@ postcss-preset-env": "^6.7.0",
 # React{
 react": "^17.0.1",
 react-dom": "^17.0.1"
-"uniqid": "^5.3.0", -tworzenie id
+
 }
 # Webpack{
 webpack": "^5.27.0",
